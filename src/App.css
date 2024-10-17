@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://t4.ftcdn.net/jpg/09/82/25/51/360_F_982255155_KZuoAHwYp5c0Zzw2HrMcqonWnIaoIsFB.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-left: 300px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.dog-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds transparency to improve readability */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin-right: 20px; /* Adds some space between the dog-section and the ban list */
+  margin-left: 350px;
+}
+
+.dog-section h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.dog-section img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.ban-list {
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds transparency */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  color: white;
+}
+
+.ban-list h3 {
+  color: white;
+}
+
+/* Add some responsiveness for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dog-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .ban-list {
+    width: 100%;
+  }
+}
